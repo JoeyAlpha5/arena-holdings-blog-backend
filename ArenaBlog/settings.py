@@ -27,6 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['arena-django-backend.herokuapp.com','localhost']
 
+# cors
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'POST',
+]
 
 # Application definition
 
