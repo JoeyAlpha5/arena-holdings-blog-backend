@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-w!csl$l8^79+j=#k6@9y)h)g&%q3m$0fsas1&n58)hgog*e1_3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['arena-django-backend.herokuapp.com','localhost']
 
 
 # Application definition
