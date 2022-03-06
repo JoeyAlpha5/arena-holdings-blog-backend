@@ -54,7 +54,7 @@ class Message(models.Model):
     message_date_sent = models.DateTimeField(auto_now_add=True,blank=False,null=False)
     # return the name of the individual sending the message in the django admin page
     def __str__(self):
-        return self.message_name
+        return self.message_sender_name
     # order the list of messages in the django admin by the date they were sent
     class Meta:
         ordering = ['-message_date_sent']
