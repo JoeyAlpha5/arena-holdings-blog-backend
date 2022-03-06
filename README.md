@@ -55,9 +55,16 @@ To send a message, paste in the following json data to test the sendMessage API
 
 ```
 {
-    "message_sender_name":name,
-    "message_sender_email":email,
-    "message_sender_mobile_number":mobile,
-    "message_content":message,
+    "message_sender_name":"name",
+    "message_sender_email":"email",
+    "message_sender_mobile_number":"mobile",
+    "message_content":"message",
 }
 ```
+
+
+### Future improvements
+
+Currently the sqlite3 database that's storing the app's data is hosted together with the application on Heroku. Seperating the database from the backend using a 3 tier architecture will provide better security and flexibility, for example by setting up an RDS database on AWS you can make use of all the database configurations offered by AWS, such as automating backups.
+
+The backend application is also missing test cases, which can be helpful when testing out new features before deployment
